@@ -12,6 +12,6 @@ class DefaultControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         $this->assertResponseIsSuccessful();
-        $this->assertSelectorTextContains('h1', 'App Engine');
+        $this->assertSelectorTextContains('title', 'App Engine');
     }
 }
